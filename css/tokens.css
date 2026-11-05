@@ -1,0 +1,142 @@
+/* デザイントークン：色・大きさ・余白・角丸・影・文字の大きさはすべてここに置く */
+:root {
+  /* 色 */
+  --color-bg: #fef7e9;
+  --color-ink: #1b4f8f;
+  --color-blue: #1869a4;
+  --color-sky: #d4e9f6;
+  --color-sky-pale: #e4f0f8;
+  --color-red: #e8473f;
+  --color-yellow: #fbd656;
+  --color-white: #ffffff;
+  --color-wave-line: #1e86c5;
+  --color-field: #fffdf8;
+  --color-placeholder: #8c8f94;
+  --color-shadow: rgba(24, 50, 90, 0.18);
+  --color-text-shadow: rgba(30, 30, 30, 0.35);
+
+  /* 書体 */
+  --font-heading: "Yusei Magic", "Zen Maru Gothic", sans-serif;
+  --font-body: "Zen Maru Gothic", sans-serif;
+  --fw-body: 700;
+  --fw-heading: 400;
+
+  /* 文字の大きさ */
+  --fs-xs: 0.8125rem;
+  --fs-map-label: 0.7rem;
+  --fs-s: 0.9375rem;
+  --fs-m: 1.0625rem;
+  --fs-l: 1.1875rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: 1.6875rem;
+  --fs-3xl: 2.0625rem;
+  --fs-price: 1.5625rem;
+  --fs-hero-copy: clamp(1.5rem, 5.4vw, 4.25rem);
+  --fs-hero-title: clamp(2.5rem, 8vw, 6rem);
+  --fs-hero-lead: clamp(1rem, 3vw, 2.25rem);
+  --fs-brand: clamp(1.05rem, 2.2vw, 1.4rem);
+  --fs-footer-name: clamp(1.3rem, 3.4vw, 2.25rem);
+  --lh-body: 1.7;
+  --lh-tight: 1.25;
+  --ls-wide: 0.12em;
+  --ls-s: 0.04em;
+
+  /* 余白 */
+  --space-xs: 0.25rem;
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 3.5rem;
+  --space-3xl: 5rem;
+  --gutter: 1.25rem;
+
+  /* 角丸 */
+  --radius-s: 0.375rem;
+  --radius-m: 0.75rem;
+  --radius-l: 1.3125rem;
+  --radius-pill: 62rem;
+
+  /* 線・影 */
+  --bw: 1px;
+  --bw-bold: 2px;
+  --brush-h: 0.6rem;
+  --shadow-card: 0 0.25rem 0.75rem var(--color-shadow);
+
+  /* 傾き */
+  --heading-tilt: -4deg;
+  --badge-tilt: -9deg;
+  --brush-tilt: 1.5deg;
+
+  /* 配置・大きさ */
+  --container: 60rem;
+  --container-wide: 64rem;
+  --header-h: 5.5rem;
+  --wave-h: 2.4rem;
+  --logo-h: 5.0625rem;
+  --nav-gap: 1.75rem;
+  --footer-h: 12.5rem;
+  --footer-wave-h: 11.25rem;
+  --palm-w: 10.75rem;
+  --palm-top: 2.375rem;
+  --palm-left: 1%;
+  --sns-size: 3rem;
+  --sns-bottom: 0.5rem;
+  --value-icon-w: 8.5rem;
+  --info-icon-w: 2.625rem;
+  --info-icon-w-s: 2rem;
+  --step-num: 2.4375rem;
+  --hero-inset-s: 5%;
+  --hero-inset-m: 7.5%;
+  --hero-inset-l: 10%;
+  --form-label-w: 15rem;
+  --field-h: 2.75rem;
+  --field-h-area: 7rem;
+  --btn-pad-y: 0.6875rem;
+  --btn-pad-x: 1.8125rem;
+  --btn-pad-y-l: 1.125rem;
+  --btn-pad-x-l: 3.75rem;
+  --label-pad: 0.3rem 0.9rem;
+  --arrow-right: -1.75rem;
+  --arrow-bottom: 40%;
+  --interior-copy-bottom: 12%;
+  --map-label-left: 51%;
+  --map-label-top: 16%;
+  --hero-pos-top: 50% 50%;
+
+  /* 写真の縦横比 */
+  --ratio-hero: 1024 / 358;
+  --ratio-hero-menu: 1024 / 242;
+  --ratio-hero-about: 512 / 392;
+  --ratio-interior: 1024 / 236;
+  --ratio-dish: 250 / 176;
+  --ratio-concept: 451 / 202;
+  --ratio-route: 6 / 5;
+  --ratio-about-photo: 140 / 249;
+  --ratio-map: 430 / 221;
+}
+
+@media (max-width: 760px) {
+  :root {
+    --ratio-hero: 3 / 2;
+    --ratio-hero-menu: 16 / 9;
+    --ratio-hero-about: 4 / 3;
+    --ratio-about-photo: 3 / 2;
+    --ratio-interior: 5 / 4;
+    --header-h: 4.5rem;
+    --logo-h: 4.25rem;
+    --nav-gap: 1.1rem;
+    --palm-w: 6.5rem;
+    --palm-top: 4.75rem;
+    --footer-h: 13rem;
+    --sns-bottom: 4.5rem;
+    --sns-size: 2.625rem;
+    --footer-wave-h: 11.5rem;
+    --fs-price: 1.3125rem;
+    --map-label-left: 51.5%;
+    --map-label-top: 15%;
+    --value-icon-w: 6rem;
+    --btn-pad-x-l: 2.25rem;
+    --hero-pos-top: 30% 50%;
+  }
+}
